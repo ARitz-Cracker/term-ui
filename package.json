@@ -1,0 +1,21 @@
+{
+	"name": "term-ui",
+	"version": "0.0.1",
+	"description": "I didn't like dialog for some reason",
+	"main": "index.js",
+	"scripts": {},
+	"repository": {
+	  "type": "git",
+	  "url": "git+https://github.com/ARitz-Cracker/term-ui"
+	},
+	"keywords": [],
+	"author": {
+	  "name": "Aritz Beobide-Cardinal",
+	  "email": "aritz@aritzcracker.ca"
+	},
+	"bugs": {
+	  "url": "https://github.com/ARitz-Cracker/term-ui/issues"
+	},
+	"homepage": "https://github.com/ARitz-Cracker/term-ui#readme",
+	"devDependencies": {}
+  }
