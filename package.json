@@ -1,7 +1,7 @@
 {
-	"name": "conference",
+	"name": "terminal-choices",
 	"version": "0.0.1",
-	"description": "NPM said my name wasn't unique enough so I looked up synonyms for 'dialog'",
+	"description": "Because I didn't like dialog(1) for some reason",
 	"main": "index.js",
 	"scripts": {},
 	"repository": {
