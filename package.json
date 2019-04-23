@@ -1,6 +1,6 @@
 {
 	"name": "terminal-choices",
-	"version": "0.0.1",
+	"version": "0.0.1.1",
 	"description": "Because I didn't like dialog(1) for some reason",
 	"main": "index.js",
 	"scripts": {},

@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const termui = require("./index");
 f = async function(){
     try{

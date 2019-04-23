@@ -15,7 +15,7 @@ const specialKeyCombos = [
 ]
 const windowElements = {};
 (function(){
-	const files = fs.readdirSync("elements");
+	const files = fs.readdirSync(__dirname+"/elements");
 	for (let fileName of files){
 		const elementName = fileName.substring(0, fileName.length - 3); // Yes I'm lazy and assuming *.js
 		windowElements[elementName] = require("./elements/"+fileName);
@@ -23,6 +23,9 @@ const windowElements = {};
 })();
 
 const createWindow = async function(options){
+	if (!process.stdout.isTTY){
+		throw new Error("stdout isn't a terminal");
+	}
 	options.elements = Array.isArray(options.elements) ? options.elements : [];
 	options.title += "";
 	options.width = (options.width | 0) || process.stdout.columns;
