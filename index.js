@@ -116,9 +116,9 @@ const createWindow = async function(options){
 		selectedElement += 1;
 	}
 	curElements[selectedElement].focus();
-	
+	let f;
 	const result = await new Promise((resolve, reject) => {
-		let f = (chunk) => {
+		f = (chunk) => {
 			const curelement = curElements[selectedElement];
 			switch(chunk[0]){
 				case 0:
@@ -219,6 +219,7 @@ const createWindow = async function(options){
 		}
 		process.stdin.on("data", f);
 	});
+	process.stdin.removeListener("data", f);
 	process.stdin.pause();
 	process.stdin.setRawMode(isRaw);
 	showCursor(true);
